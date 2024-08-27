@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f5fc;
+    font-family: 'Inter', sans-serif;
+    color: #0a3871;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.area_del_texto,
+.mensaje_texto {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #d8dfe8;
+    font-size: 16px;
+}
+
+.area_del_texto {
+    height: 150px;
+}
+
+.mensaje_texto {
+    height: 150px;
+    background: #ffffff url('imagenes/muneco.png') no-repeat center center;
+    background-size: contain;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 48%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn_encriptar {
+    background-color: #0a3871;
+    color: white;
+}
+
+.btn_desencriptar {
+    background-color: #d8dfe8;
+    color: #0a3871;
+}
+
+.btn_copiar {
+    background-color: #0a3871;
+    color: white;
+    width: 100%;
+}
+
+.alerta_tipo_letras {
+    color: #495057;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botones button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.mensaje_texto.ocultar-fondo {
+    background-image: none;
+}
